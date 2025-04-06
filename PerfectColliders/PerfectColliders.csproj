@@ -21,6 +21,12 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<Reference Include="BepuPhysics">
+		  <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Resonite\Resonite_Data\Managed\BepuPhysics.dll</HintPath>
+		</Reference>
+		<Reference Include="BepuUtilities">
+		  <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Resonite\Resonite_Data\Managed\BepuUtilities.dll</HintPath>
+		</Reference>
 		<Reference Include="ResoniteModLoader">
 			<HintPath>$(ResonitePath)Libraries\ResoniteModLoader.dll</HintPath>
 			<Private>False</Private>

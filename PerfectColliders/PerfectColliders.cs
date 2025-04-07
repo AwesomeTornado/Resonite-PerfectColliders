@@ -24,7 +24,8 @@ public class PerfectColliders : ResoniteMod {
 
 			Slot rootSlot = __instance.Slot.World.RootSlot;
 
-			System.Collections.Generic.List<MeshRenderer> meshRenderers = rootSlot.GetComponents<MeshRenderer>();
+			System.Collections.Generic.List<MeshRenderer> meshRenderers = rootSlot.GetComponentsInChildren<MeshRenderer>();
+			Msg(meshRenderers.ToString());
 			foreach (MeshRenderer meshRenderer in meshRenderers) {
 				//if (__instance is not null && __instance.Slot is not null && __instance.Slot.World.Name is not "Userspace") {
 					localCollider(meshRenderer);
@@ -64,7 +65,7 @@ public class PerfectColliders : ResoniteMod {
 				Msg("lc10");
 				collider.SetCharacterCollider();
 				Msg("lc11");
-				collider.Type.Value = ColliderType.Active;
+				collider.Type.Value = ColliderType.Static;
 				Msg("lc12");
 				Msg(collider.ToString());
 			}
